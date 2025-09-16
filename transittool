@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+
+import csv
+import sys
+import argparse
+import os
+import re
+from datetime import datetime
+from collections import defaultdict
+from pathlib import Path
+
+META_SUFFIX = ".meta"
+INDEX_SUFFIX = ".index"
+DATA_DIR = Path.home() / ".local" / "share" / "transittool"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+def get_data_path(filename):
+    return DATA_DIR / filename
+
+def clean_columns(input_file, output_file):
+    keep_columns = [
+        "DateTime",
+        "Transaction",
+        "Product",
+        "Amount",
+        "BalanceDetails",
+        "JourneyId",
+        "LocationDisplay",
+        "TransactonTime",
+    ]
+    with open(input_file, newline='', encoding='utf-8') as infile, open(output_file, 'w', newline='', encoding='utf-8') as outfile:
+        reader = csv.DictReader(infile)
+        writer = csv.DictWriter(outfile, fieldnames=keep_columns)
+        writer.writeheader()
+        for row in reader:
+            cleaned_row = {key: row.get(key, "").strip() for key in keep_columns}
+            writer.writerow(cleaned_row)
+    print(f"Cleaned file written to {output_file}")
+
+def extract_date_range_from_filename(filename):
+    match = re.search(r"([A-Za-z]{3}-\d{2}-\d{4}) to ([A-Za-z]{3}-\d{2}-\d{4})", filename)
+    if not match:
+        raise ValueError(f"Cannot extract date range from filename: {filename}")
+    return match.group(1), match.group(2)
+
+def write_date_range(meta_file, start_date, end_date):
+    with open(meta_file, 'w', encoding='utf-8') as f:
+        f.write(f"{start_date} to {end_date}\n")
+
+def read_date_range(meta_file):
+    with open(meta_file, 'r', encoding='utf-8') as f:
+        return f.read().strip()
+
+def update_date_range(meta_file, new_start_date, new_end_date):
+    old_range = read_date_range(meta_file)
+    old_start, old_end = old_range.split(" to ")
+    fmt = "%b-%d-%Y"
+    start = min(datetime.strptime(old_start, fmt), datetime.strptime(new_start_date, fmt)).strftime(fmt)
+    end = max(datetime.strptime(old_end, fmt), datetime.strptime(new_end_date, fmt)).strftime(fmt)
+    write_date_range(meta_file, start, end)
+    print(f"Updated date range: {start} to {end}")
+
+def load_index(index_file):
+    if not index_file.exists():
+        return set()
+    with open(index_file, 'r', encoding='utf-8') as f:
+        return set(tuple(line.strip().split('\t')) for line in f if line.strip())
+
+def save_index(index_file, index_set):
+    with open(index_file, 'w', encoding='utf-8') as f:
+        for dt, jid in index_set:
+            jid_str = jid if jid is not None else "None"
+            f.write(f"{dt}\t{jid_str}\n")
+
+def add_data(raw_file, master_filename):
+    master_csv = get_data_path(master_filename)
+    meta_file = get_data_path(master_filename + META_SUFFIX)
+    index_file = get_data_path(master_filename + INDEX_SUFFIX)
+    temp_cleaned = get_data_path("temp_cleaned.csv")
+
+    clean_columns(raw_file, temp_cleaned)
+
+    existing_keys = load_index(index_file)
+
+    with open(temp_cleaned, newline='', encoding='utf-8') as newf, open(master_csv, 'a', newline='', encoding='utf-8') as existingf:
+        reader = csv.DictReader(newf)
+        writer = csv.DictWriter(existingf, fieldnames=reader.fieldnames)
+
+        new_keys = set()
+        for row in reader:
+            dt = row.get("DateTime", "")
+            jid = row.get("JourneyId") or None
+            key = (dt, jid)
+            if key not in existing_keys:
+                writer.writerow(row)
+                new_keys.add(key)
+
+    os.remove(temp_cleaned)
+    updated_keys = existing_keys.union(new_keys)
+    save_index(index_file, updated_keys)
+
+    new_start_date, new_end_date = extract_date_range_from_filename(raw_file)
+    update_date_range(meta_file, new_start_date, new_end_date)
+
+    print(f"Appended cleaned data from {raw_file} to {master_csv}")
+
+def show_summary(input_file):
+    monthly_data = defaultdict(lambda: {"total_spent": 0.0, "trip_count": 0})
+    with open(get_data_path(input_file), newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                dt = datetime.strptime(row["DateTime"], "%b-%d-%Y %I:%M %p")
+                month_key = dt.strftime("%Y-%m")
+
+                amount_str = row.get("Amount", "").replace("$", "").strip()
+                is_trip = row.get("JourneyId")
+                if amount_str and is_trip:
+                    amount = float(amount_str)
+                    if amount != 0:
+                        monthly_data[month_key]["total_spent"] += -amount
+
+                transaction = row.get("Transaction", "").lower()
+                if "tap in" in transaction:
+                    monthly_data[month_key]["trip_count"] += 1
+
+            except Exception as e:
+                print(f"Skipping row due to error: {e}")
+                continue
+
+    print(f"{'Month':<10} {'Spent ($)':>10} {'Trips':>10}")
+    for month in sorted(monthly_data, reverse=True):
+        data = monthly_data[month]
+        print(f"{month:<10} {data['total_spent']:>10.2f} {data['trip_count']:>10}")
+
+def show_date(master_filename):
+    meta_path = get_data_path(master_filename + META_SUFFIX)
+    print(read_date_range(meta_path))
+
+def init_master(raw_file, master_filename):
+    master_csv = get_data_path(master_filename)
+    meta_file = get_data_path(master_filename + META_SUFFIX)
+    index_file = get_data_path(master_filename + INDEX_SUFFIX)
+
+    clean_columns(raw_file, master_csv)
+    start_date, end_date = extract_date_range_from_filename(raw_file)
+    write_date_range(meta_file, start_date, end_date)
+
+    index_set = set()
+    with open(master_csv, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            dt = row.get("DateTime", "")
+            jid = row.get("JourneyId") or None
+            index_set.add((dt, jid))
+    save_index(index_file, index_set)
+
+    print(f"Initialized {master_csv} with date range {start_date} to {end_date}")
+
+def main():
+    parser = argparse.ArgumentParser(prog="transittool", description="Vancouver Transit CSV utility tool")
+    subparsers = parser.add_subparsers(dest='command', required=True)
+
+    parser_append = subparsers.add_parser('append')
+    parser_append.add_argument('raw_file')
+    parser_append.add_argument('master_csv', default='master.csv')
+
+    parser_summary = subparsers.add_parser('summary')
+    parser_summary.add_argument('input_csv', nargs='?', default='master.csv')
+
+    parser_date = subparsers.add_parser('date')
+    parser_date.add_argument('master_csv', nargs='?', default='master.csv')
+
+    parser_init = subparsers.add_parser('init')
+    parser_init.add_argument('raw_file')
+    parser_init.add_argument('-o', '--output', default='master.csv')
+
+    args = parser.parse_args()
+    if args.command == 'append':
+        add_data(args.raw_file, args.master_csv)
+    elif args.command == 'summary':
+        show_summary(args.input_csv)
+    elif args.command == 'date':
+        show_date(args.master_csv)
+    elif args.command == 'init':
+        init_master(args.raw_file, args.output)
+
+if __name__ == "__main__":
+    main()
