@@ -25,7 +25,10 @@ chmod +x transittool
 
 ## Requirements
 - Python 3.6+
-- A CSV file containing your Translink trip records downloaded from the [Compass Card Website](https://www.compasscard.ca/SignIn). *Do not* rename the downloaded CSV file. The CSV data file names must contain date ranges in the format `MM-DD-YYYY` to `MM-DD-YYYY` because `transittool` uses it to determine the date range of the records. The downloaded raw CSV data file name should look like `Compass Card History - <your compass card number> - May-25-2024 to Jun-19-2025.csv`.
+- A CSV file containing your Translink trip records downloaded from the [Compass Card Website](https://www.compasscard.ca/SignIn).
+> [!WARNING] DO NOT rename the downloaded CSV file.
+> The CSV data file names must contain date ranges in the format `MM-DD-YYYY` to `MM-DD-YYYY` because `transittool` uses it to determine the date range of the records.  
+> The downloaded raw CSV data file name should look like `Compass Card History - <your compass card number> - May-25-2024 to Jun-19-2025.csv`.
 
 ## Usage
 #### Initialize a master CSV data file:
