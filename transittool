@@ -158,32 +158,46 @@ def init_master(raw_file, master_filename):
     print(f"Initialized {master_csv} with date range {start_date} to {end_date}")
 
 def main():
-    parser = argparse.ArgumentParser(prog="transittool", description="Vancouver Transit CSV utility tool")
-    subparsers = parser.add_subparsers(dest='command', required=True)
+    parser = argparse.ArgumentParser(prog="transittool", description="A utility for managing and analyzing your Vancouver Translink trip records.")
+    subparsers = parser.add_subparsers(title="Available commands", dest='command', required=True)
 
-    parser_append = subparsers.add_parser('append')
-    parser_append.add_argument('raw_file')
-    parser_append.add_argument('master_csv', default='master.csv')
+    parser_init = subparsers.add_parser(
+      'init',
+      help="Initialize a new master CSV database from a raw downloaded CSV file",
+      description="Cleans a raw CSV and creates a new master.csv along with metadata for tracking the date range."
+      )
+    parser_init.add_argument('raw_file', help='Downloaded CSV file from compasscard.ca')
 
-    parser_summary = subparsers.add_parser('summary')
-    parser_summary.add_argument('input_csv', nargs='?', default='master.csv')
+    parser_summary = subparsers.add_parser(
+      'summary',
+      help="Show monthly summary of spending and trips",
+      description="Prints total spending and trip counts grouped by month."
+      )
 
-    parser_date = subparsers.add_parser('date')
-    parser_date.add_argument('master_csv', nargs='?', default='master.csv')
+    parser_date = subparsers.add_parser(
+      'date',
+      help="Show date range of the existing Translink trip data file",
+      description="Reads the metadata file associated with master.csv and prints the date range of the transit data."
+      )
 
-    parser_init = subparsers.add_parser('init')
-    parser_init.add_argument('raw_file')
-    parser_init.add_argument('-o', '--output', default='master.csv')
+    parser_append = subparsers.add_parser(
+      'append',
+      help="Append new data into an existing CSV data file",
+      description="Cleans a new raw CSV and appends unique rows into master.csv. "
+                  "Automatically updates the date range metadata."
+      )
+    parser_append.add_argument('raw_file', help='Downloaded CSV file from compasscard.ca')
 
     args = parser.parse_args()
-    if args.command == 'append':
-        add_data(args.raw_file, args.master_csv)
+    if args.command == 'init':
+        init_master(args.raw_file, "master.csv")
     elif args.command == 'summary':
-        show_summary(args.input_csv)
+        show_summary("master.csv")
     elif args.command == 'date':
-        show_date(args.master_csv)
-    elif args.command == 'init':
-        init_master(args.raw_file, args.output)
+        show_date("master.csv")
+    elif args.command == 'append':
+        add_data(args.raw_file, "master.csv")
+        
 
 if __name__ == "__main__":
     main()
