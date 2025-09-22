@@ -1,0 +1,239 @@
+DateTime,Transaction,Product,LineItem,Amount,BalanceDetails,JourneyId,LocationDisplay,TransactonTime,OrderDate,Payment,OrderNumber,AuthCode,Total
+May-23-2025 09:27 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$20.00,$20.10,,"Purchase at Broadway-City Hall Stn
+Stored Value",09:27 PM,,,,,
+May-18-2025 05:43 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$0.10,2025-05-19T00:33:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",05:43 PM,,,,,
+May-18-2025 05:33 PM,Tap in at Waterfront Stn,Stored Value,,-$2.60,$0.10,2025-05-19T00:33:00.0000000Z,"Tap in at Waterfront Stn
+Stored Value",05:33 PM,,,,,
+May-18-2025 04:12 PM,Tap out at Waterfront Stn,Stored Value,,$0.00,$2.70,2025-05-18T23:01:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",04:12 PM,,,,,
+May-18-2025 04:01 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$2.70,2025-05-18T23:01:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",04:01 PM,,,,,
+May-18-2025 12:06 AM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$5.30,2025-05-18T06:51:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",12:06 AM,,,,,
+May-17-2025 11:51 PM,Tap in at Langara-49th Stn,Stored Value,,-$2.60,$5.30,2025-05-18T06:51:00.0000000Z,"Tap in at Langara-49th Stn
+Stored Value",11:51 PM,,,,,
+May-17-2025 08:39 PM,Tap out at Langara-49th Stn,Stored Value,,$0.00,$7.90,2025-05-18T03:25:00.0000000Z,"Tap out at Langara-49th Stn
+Stored Value",08:39 PM,,,,,
+May-17-2025 08:25 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$7.90,2025-05-18T03:25:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",08:25 PM,,,,,
+May-08-2025 05:32 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$1.05,$10.50,2025-05-09T00:17:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",05:32 PM,,,,,
+May-08-2025 05:17 PM,Tap in at Bridgeport Stn,Stored Value,,-$4.90,$9.45,2025-05-09T00:17:00.0000000Z,"Tap in at Bridgeport Stn
+Stored Value",05:17 PM,,,,,
+May-03-2025 11:54 AM,Transfer at Bus Stop 50913,Stored Value,,$0.00,$14.35,2025-05-03T18:25:00.0000000Z,"Transfer at Bus Stop 50913
+Stored Value",11:54 AM,,,,,
+May-03-2025 11:51 AM,Tap out at Commercial Drive Stn,Stored Value,,$0.00,$14.35,2025-05-03T18:25:00.0000000Z,"Tap out at Commercial Drive Stn
+Stored Value",11:51 AM,,,,,
+May-03-2025 11:25 AM,Tap in at Lougheed Stn,Stored Value,,-$2.60,$14.35,2025-05-03T18:25:00.0000000Z,"Tap in at Lougheed Stn
+Stored Value",11:25 AM,,,,,
+May-03-2025 10:10 AM,Tap out at Lougheed Stn,Stored Value,,$0.00,$16.95,2025-05-03T16:30:00.0000000Z,"Tap out at Lougheed Stn
+Stored Value",10:10 AM,,,,,
+May-03-2025 09:43 AM,Transfer at Commercial Drive Stn,Stored Value,,$0.00,$16.95,2025-05-03T16:30:00.0000000Z,"Transfer at Commercial Drive Stn
+Stored Value",09:43 AM,,,,,
+May-03-2025 09:30 AM,Tap in at Bus Stop 50875,Stored Value,,-$2.60,$16.95,2025-05-03T16:30:00.0000000Z,"Tap in at Bus Stop 50875
+Stored Value",09:30 AM,,,,,
+May-02-2025 05:47 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.30,$19.55,2025-05-03T00:24:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",05:47 PM,,,,,
+May-02-2025 05:38 PM,Transfer at Vancouver City Centre Stn,Stored Value,,-$2.30,$17.25,2025-05-03T00:24:00.0000000Z,"Transfer at Vancouver City Centre Stn
+Stored Value",05:38 PM,,,,,
+May-02-2025 05:38 PM,Purchase at Vancouver City Centre Stn,Stored Value,,$20.00,$19.55,,"Purchase at Vancouver City Centre Stn
+Stored Value",05:38 PM,,,,,
+May-02-2025 05:24 PM,Tap in at Bus Stop 50972,Stored Value,,-$2.60,-$0.45,2025-05-03T00:24:00.0000000Z,"Tap in at Bus Stop 50972
+Stored Value",05:24 PM,,,,,
+May-02-2025 01:52 PM,Transfer at Bus Stop 50096,Stored Value,,$0.00,$2.15,2025-05-02T20:27:00.0000000Z,"Transfer at Bus Stop 50096
+Stored Value",01:52 PM,,,,,
+May-02-2025 01:38 PM,Tap out at Waterfront Stn,Stored Value,,$2.30,$2.15,2025-05-02T20:27:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",01:38 PM,,,,,
+May-02-2025 01:27 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,-$0.15,2025-05-02T20:27:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:27 PM,,,,,
+Apr-18-2025 07:33 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$4.75,2025-04-19T02:24:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",07:33 PM,,,,,
+Apr-18-2025 07:24 PM,Tap in at Langara-49th Stn,Stored Value,,-$2.60,$4.75,2025-04-19T02:24:00.0000000Z,"Tap in at Langara-49th Stn
+Stored Value",07:24 PM,,,,,
+Apr-18-2025 12:20 PM,Tap out at Lansdowne Stn,Stored Value,,$0.00,$7.35,2025-04-18T18:59:00.0000000Z,"Tap out at Lansdowne Stn
+Stored Value",12:20 PM,,,,,
+Apr-18-2025 11:59 AM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$7.35,2025-04-18T18:59:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",11:59 AM,,,,,
+Apr-16-2025 01:27 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$5.00,$9.95,,"Purchase at Broadway-City Hall Stn
+Stored Value",01:27 PM,,,,,
+Apr-16-2025 01:08 PM,Tap in at Bus Stop 61660,Stored Value,,-$2.60,$4.95,2025-04-16T20:08:00.0000000Z,"Tap in at Bus Stop 61660
+Stored Value",01:08 PM,,,,,
+Apr-16-2025 09:00 AM,Tap in at Bus Stop 58501,Stored Value,,-$2.60,$7.55,2025-04-16T16:00:00.0000000Z,"Tap in at Bus Stop 58501
+Stored Value",09:00 AM,,,,,
+Apr-10-2025 04:43 PM,Tap in at Bus Stop 50323,Stored Value,,-$2.60,$10.15,2025-04-10T23:43:00.0000000Z,"Tap in at Bus Stop 50323
+Stored Value",04:43 PM,,,,,
+Apr-06-2025 06:40 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$12.75,2025-04-07T01:28:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",06:40 PM,,,,,
+Apr-06-2025 06:28 PM,Tap in at Marine Drive Stn,Stored Value,,-$2.60,$12.75,2025-04-07T01:28:00.0000000Z,"Tap in at Marine Drive Stn
+Stored Value",06:28 PM,,,,,
+Apr-06-2025 12:02 PM,Tap out at Aberdeen Stn,Stored Value,,$0.00,$15.35,2025-04-06T18:39:00.0000000Z,"Tap out at Aberdeen Stn
+Stored Value",12:02 PM,,,,,
+Apr-06-2025 11:39 AM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$15.35,2025-04-06T18:39:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",11:39 AM,,,,,
+Apr-03-2025 04:05 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.30,$17.95,2025-04-03T21:31:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",04:05 PM,,,,,
+Apr-03-2025 03:54 PM,Transfer at Waterfront Stn,Stored Value,,-$2.30,$15.65,2025-04-03T21:31:00.0000000Z,"Transfer at Waterfront Stn
+Stored Value",03:54 PM,,,,,
+Apr-03-2025 02:43 PM,Tap out at Waterfront Stn,Stored Value,,$2.30,$17.95,2025-04-03T21:31:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",02:43 PM,,,,,
+Apr-03-2025 02:31 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$15.65,2025-04-03T21:31:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",02:31 PM,,,,,
+Mar-19-2025 04:32 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$20.00,$20.55,,"Purchase at Broadway-City Hall Stn
+Stored Value",04:32 PM,,,,,
+Mar-19-2025 04:29 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.30,$0.55,2025-03-19T23:18:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",04:29 PM,,,,,
+Mar-19-2025 04:18 PM,Tap in at Waterfront Stn,Stored Value,,-$4.90,-$1.75,2025-03-19T23:18:00.0000000Z,"Tap in at Waterfront Stn
+Stored Value",04:18 PM,,,,,
+Mar-19-2025 01:41 PM,Tap out at Waterfront Stn,Stored Value,,$2.30,$3.15,2025-03-19T20:32:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",01:41 PM,,,,,
+Mar-19-2025 01:32 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$0.85,2025-03-19T20:32:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:32 PM,,,,,
+Feb-14-2025 04:12 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.30,$5.75,2025-02-14T23:57:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",04:12 PM,,,,,
+Feb-14-2025 03:57 PM,Tap in at Waterfront Stn,Stored Value,,-$4.90,$3.45,2025-02-14T23:57:00.0000000Z,"Tap in at Waterfront Stn
+Stored Value",03:57 PM,,,,,
+Feb-14-2025 02:12 PM,Tap out at Waterfront Stn,Stored Value,,$2.30,$8.35,2025-02-14T21:21:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",02:12 PM,,,,,
+Feb-14-2025 02:04 PM,Transfer at Vancouver City Centre Stn,Stored Value,,-$2.30,$6.05,2025-02-14T21:21:00.0000000Z,"Transfer at Vancouver City Centre Stn
+Stored Value",02:04 PM,,,,,
+Feb-14-2025 01:48 PM,Tap out at Vancouver City Centre Stn,Stored Value,,$2.30,$8.35,2025-02-14T21:21:00.0000000Z,"Tap out at Vancouver City Centre Stn
+Stored Value",01:48 PM,,,,,
+Feb-14-2025 01:42 PM,Transfer at Waterfront Stn,Stored Value,,-$2.30,$6.05,2025-02-14T21:21:00.0000000Z,"Transfer at Waterfront Stn
+Stored Value",01:42 PM,,,,,
+Feb-14-2025 01:32 PM,Tap out at Waterfront Stn,Stored Value,,$2.30,$8.35,2025-02-14T21:21:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",01:32 PM,,,,,
+Feb-14-2025 01:21 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$6.05,2025-02-14T21:21:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:21 PM,,,,,
+Jan-27-2025 07:58 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$10.95,2025-01-28T03:30:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",07:58 PM,,,,,
+Jan-27-2025 07:30 PM,Tap in at YVR-Airport Stn,Stored Value,,-$7.60,$10.95,2025-01-28T03:30:00.0000000Z,"Tap in at YVR-Airport Stn
+Stored Value",07:30 PM,,,,,
+Jan-23-2025 08:57 PM,Tap out at YVR-Airport Stn,Stored Value,,$0.00,$18.55,2025-01-24T04:25:00.0000000Z,"Tap out at YVR-Airport Stn
+Stored Value",08:57 PM,,,,,
+Jan-23-2025 08:25 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$18.55,2025-01-24T04:25:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",08:25 PM,,,,,
+Jan-19-2025 06:37 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$20.00,$21.15,,"Purchase at Broadway-City Hall Stn
+Stored Value",06:37 PM,,,,,
+Jan-19-2025 06:36 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$1.15,2025-01-20T02:12:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",06:36 PM,,,,,
+Jan-19-2025 06:12 PM,Tap in at Brighouse Stn,Stored Value,,-$2.60,$1.15,2025-01-20T02:12:00.0000000Z,"Tap in at Brighouse Stn
+Stored Value",06:12 PM,,,,,
+Jan-19-2025 03:10 PM,Tap out at Brighouse Stn,Stored Value,,$0.00,$3.75,2025-01-19T22:45:00.0000000Z,"Tap out at Brighouse Stn
+Stored Value",03:10 PM,,,,,
+Jan-19-2025 02:45 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$3.75,2025-01-19T22:45:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",02:45 PM,,,,,
+Dec-27-2024 11:24 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$6.35,2024-12-28T07:13:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",11:24 PM,,,,,
+Dec-27-2024 11:13 PM,Tap in at Langara-49th Stn,Stored Value,,-$2.60,$6.35,2024-12-28T07:13:00.0000000Z,"Tap in at Langara-49th Stn
+Stored Value",11:13 PM,,,,,
+Dec-10-2024 09:27 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$8.95,2024-12-11T05:11:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",09:27 PM,,,,,
+Dec-10-2024 09:11 PM,Tap in at Marine Drive Stn,Stored Value,,-$2.60,$8.95,2024-12-11T05:11:00.0000000Z,"Tap in at Marine Drive Stn
+Stored Value",09:11 PM,,,,,
+Dec-10-2024 05:37 PM,Tap out at Marine Drive Stn,Stored Value,,$2.30,$11.55,2024-12-11T01:25:00.0000000Z,"Tap out at Marine Drive Stn
+Stored Value",05:37 PM,,,,,
+Dec-10-2024 05:25 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$9.25,2024-12-11T01:25:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",05:25 PM,,,,,
+Dec-07-2024 05:30 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$14.15,2024-12-08T00:56:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",05:30 PM,,,,,
+Dec-07-2024 05:20 PM,Transfer at Waterfront Stn,Stored Value,,$0.00,$14.15,2024-12-08T00:56:00.0000000Z,"Transfer at Waterfront Stn
+Stored Value",05:20 PM,,,,,
+Dec-07-2024 05:19 PM,Tap out at Waterfront Stn,Stored Value,,$0.00,$14.15,2024-12-08T00:56:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",05:19 PM,,,,,
+Dec-07-2024 04:56 PM,Tap in at Lonsdale Quay,Stored Value,,-$2.60,$14.15,2024-12-08T00:56:00.0000000Z,"Tap in at Lonsdale Quay
+Stored Value",04:56 PM,,,,,
+Dec-07-2024 02:44 PM,Tap out at Lonsdale Quay,Stored Value,,$0.00,$16.75,2024-12-07T21:31:00.0000000Z,"Tap out at Lonsdale Quay
+Stored Value",02:44 PM,,,,,
+Dec-07-2024 02:16 PM,Transfer at Waterfront Stn,Stored Value,,$0.00,$16.75,2024-12-07T21:31:00.0000000Z,"Transfer at Waterfront Stn
+Stored Value",02:16 PM,,,,,
+Dec-07-2024 01:43 PM,Tap out at Waterfront Stn,Stored Value,,$0.00,$16.75,2024-12-07T21:31:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",01:43 PM,,,,,
+Dec-07-2024 01:31 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$16.75,2024-12-07T21:31:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:31 PM,,,,,
+Nov-24-2024 04:57 PM,Transfer at Bus Stop 50913,Stored Value,,$0.00,$19.35,2024-11-25T00:36:00.0000000Z,"Transfer at Bus Stop 50913
+Stored Value",04:57 PM,,,,,
+Nov-24-2024 04:50 PM,Tap out at Commercial Drive Stn,Stored Value,,$0.00,$19.35,2024-11-25T00:36:00.0000000Z,"Tap out at Commercial Drive Stn
+Stored Value",04:50 PM,,,,,
+Nov-24-2024 04:36 PM,Tap in at Brentwood Stn,Stored Value,,-$2.60,$19.35,2024-11-25T00:36:00.0000000Z,"Tap in at Brentwood Stn
+Stored Value",04:36 PM,,,,,
+Nov-24-2024 02:32 PM,Tap out at Brentwood Stn,Stored Value,,$0.00,$21.95,2024-11-24T22:08:00.0000000Z,"Tap out at Brentwood Stn
+Stored Value",02:32 PM,,,,,
+Nov-24-2024 02:19 PM,Transfer at Commercial Drive Stn,Stored Value,,$0.00,$21.95,2024-11-24T22:08:00.0000000Z,"Transfer at Commercial Drive Stn
+Stored Value",02:19 PM,,,,,
+Nov-24-2024 02:08 PM,Tap in at Bus Stop 50875,Stored Value,,-$2.60,$21.95,2024-11-24T22:08:00.0000000Z,"Tap in at Bus Stop 50875
+Stored Value",02:08 PM,,,,,
+Sep-17-2024 09:05 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$20.00,$24.55,,"Purchase at Broadway-City Hall Stn
+Stored Value",09:05 PM,,,,,
+Sep-17-2024 09:04 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$4.55,2024-09-18T03:34:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",09:04 PM,,,,,
+Sep-17-2024 08:34 PM,Tap in at Lansdowne Stn,Stored Value,,-$2.60,$4.55,2024-09-18T03:34:00.0000000Z,"Tap in at Lansdowne Stn
+Stored Value",08:34 PM,,,,,
+Sep-17-2024 04:55 PM,Transfer at Bus Stop 61338,Stored Value,,$0.00,$7.15,2024-09-17T23:37:00.0000000Z,"Transfer at Bus Stop 61338
+Stored Value",04:55 PM,,,,,
+Sep-17-2024 04:51 PM,Tap out at Marine Drive Stn,Stored Value,,$2.30,$7.15,2024-09-17T23:37:00.0000000Z,"Tap out at Marine Drive Stn
+Stored Value",04:51 PM,,,,,
+Sep-17-2024 04:37 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$4.85,2024-09-17T23:37:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",04:37 PM,,,,,
+Sep-09-2024 02:49 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.30,$9.75,2024-09-09T21:40:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",02:49 PM,,,,,
+Sep-09-2024 02:40 PM,Tap in at Vancouver City Centre Stn,Stored Value,,-$4.90,$7.45,2024-09-09T21:40:00.0000000Z,"Tap in at Vancouver City Centre Stn
+Stored Value",02:40 PM,,,,,
+Sep-09-2024 10:38 AM,Transfer at Bus Stop 61031,Stored Value,,$0.00,$12.35,2024-09-09T17:25:00.0000000Z,"Transfer at Bus Stop 61031
+Stored Value",10:38 AM,,,,,
+Sep-09-2024 10:32 AM,Tap out at Vancouver City Centre Stn,Stored Value,,$2.30,$12.35,2024-09-09T17:25:00.0000000Z,"Tap out at Vancouver City Centre Stn
+Stored Value",10:32 AM,,,,,
+Sep-09-2024 10:25 AM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$10.05,2024-09-09T17:25:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",10:25 AM,,,,,
+Aug-29-2024 04:10 PM,Transfer at Bus Stop 50913,Stored Value,,$0.00,$14.95,2024-08-29T22:52:00.0000000Z,"Transfer at Bus Stop 50913
+Stored Value",04:10 PM,,,,,
+Aug-29-2024 03:52 PM,Tap in at Bus Stop 50875,Stored Value,,-$2.60,$14.95,2024-08-29T22:52:00.0000000Z,"Tap in at Bus Stop 50875
+Stored Value",03:52 PM,,,,,
+Aug-02-2024 08:34 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$17.55,2024-08-03T03:19:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",08:34 PM,,,,,
+Aug-02-2024 08:19 PM,Tap in at Marine Drive Stn,Stored Value,,-$2.60,$17.55,2024-08-03T03:19:00.0000000Z,"Tap in at Marine Drive Stn
+Stored Value",08:19 PM,,,,,
+Aug-02-2024 02:07 PM,Tap out at Marine Drive Stn,Stored Value,,$2.30,$20.15,2024-08-02T20:55:00.0000000Z,"Tap out at Marine Drive Stn
+Stored Value",02:07 PM,,,,,
+Aug-02-2024 01:55 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$17.85,2024-08-02T20:55:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:55 PM,,,,,
+Jun-20-2024 02:10 PM,Purchase at Broadway-City Hall Stn,Stored Value,,$20.00,$22.75,,"Purchase at Broadway-City Hall Stn
+Stored Value",02:10 PM,,,,,
+Jun-20-2024 02:08 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$2.25,$2.75,2024-06-20T20:59:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",02:08 PM,,,,,
+Jun-20-2024 01:59 PM,Tap in at Vancouver City Centre Stn,Stored Value,,-$4.80,$0.50,2024-06-20T20:59:00.0000000Z,"Tap in at Vancouver City Centre Stn
+Stored Value",01:59 PM,,,,,
+Jun-20-2024 10:31 AM,Tap in at Bus Stop 60676,Stored Value,,-$2.55,$5.30,2024-06-20T17:31:00.0000000Z,"Tap in at Bus Stop 60676
+Stored Value",10:31 AM,,,,,
+Jun-16-2024 01:46 PM,Tap out at Lonsdale Quay,Stored Value,,$0.00,$7.85,2024-06-16T20:05:00.0000000Z,"Tap out at Lonsdale Quay
+Stored Value",01:46 PM,,,,,
+Jun-16-2024 01:17 PM,Transfer at Waterfront Stn,Stored Value,,$0.00,$7.85,2024-06-16T20:05:00.0000000Z,"Transfer at Waterfront Stn
+Stored Value",01:17 PM,,,,,
+Jun-16-2024 01:16 PM,Purchase at Waterfront Stn,Stored Value,,$10.00,$7.85,,"Purchase at Waterfront Stn
+Stored Value",01:16 PM,,,,,
+Jun-16-2024 01:14 PM,Tap out at Waterfront Stn,Stored Value,,$0.00,-$2.15,2024-06-16T20:05:00.0000000Z,"Tap out at Waterfront Stn
+Stored Value",01:14 PM,,,,,
+Jun-16-2024 01:05 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.55,-$2.15,2024-06-16T20:05:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",01:05 PM,,,,,
+Jun-17-2025 02:58 PM,Tap in at Bus Stop 50035,Stored Value,,-$2.60,$4.50,2025-06-17T21:58:00.0000000Z,"Tap in at Bus Stop 50035
+Stored Value",02:58 PM,,,,,
+Jun-17-2025 01:03 PM,Tap out at Vancouver City Centre Stn,Stored Value,,$2.30,$7.10,2025-06-17T19:56:00.0000000Z,"Tap out at Vancouver City Centre Stn
+Stored Value",01:03 PM,,,,,
+Jun-17-2025 12:56 PM,Tap in at Broadway-City Hall Stn,Stored Value,,-$4.90,$4.80,2025-06-17T19:56:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",12:56 PM,,,,,
+Jun-15-2025 10:33 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$9.70,2025-06-16T05:19:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",10:33 PM,,,,,
+Jun-15-2025 10:19 PM,Tap in at Langara-49th Stn,Stored Value,,-$2.60,$9.70,2025-06-16T05:19:00.0000000Z,"Tap in at Langara-49th Stn
+Stored Value",10:19 PM,,,,,
+Jun-15-2025 09:16 AM,Tap out at Lansdowne Stn,Stored Value,,$0.00,$12.30,2025-06-15T15:56:00.0000000Z,"Tap out at Lansdowne Stn
+Stored Value",09:16 AM,,,,,
+Jun-15-2025 08:56 AM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$12.30,2025-06-15T15:56:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",08:56 AM,,,,,
+Jun-14-2025 08:39 PM,Tap out at Broadway-City Hall Stn,Stored Value,,$0.00,$14.90,2025-06-15T03:20:00.0000000Z,"Tap out at Broadway-City Hall Stn
+Stored Value",08:39 PM,,,,,
+Jun-14-2025 08:20 PM,Tap in at Lansdowne Stn,Stored Value,,-$2.60,$14.90,2025-06-15T03:20:00.0000000Z,"Tap in at Lansdowne Stn
+Stored Value",08:20 PM,,,,,
+Jun-14-2025 09:28 AM,Tap out at Lansdowne Stn,Stored Value,,$0.00,$17.50,2025-06-14T16:09:00.0000000Z,"Tap out at Lansdowne Stn
+Stored Value",09:28 AM,,,,,
+Jun-14-2025 09:09 AM,Tap in at Broadway-City Hall Stn,Stored Value,,-$2.60,$17.50,2025-06-14T16:09:00.0000000Z,"Tap in at Broadway-City Hall Stn
+Stored Value",09:09 AM,,,,,

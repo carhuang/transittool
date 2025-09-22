@@ -24,7 +24,7 @@ chmod +x transittool
 2. Run `make install` to create a symlink in your binary directory. `transittool` is now ready for system-wide usage.
 
 ## Requirements
-- Python 3.6+
+- Python 3.7+
 - A CSV file containing your Translink trip records downloaded from the [Compass Card Website](https://www.compasscard.ca/SignIn).
 
 > [!WARNING] DO NOT rename the downloaded CSV file.
@@ -58,6 +58,14 @@ transittool --help
 ```
 
 ## Testing
+1. Create `venv`. You only need to do this once.
+```bash
+make venv
+```
+2. Run tests.
+```bash
+make test
+```
 
 ## Uninstallation for Non-Developers
 ```bash
